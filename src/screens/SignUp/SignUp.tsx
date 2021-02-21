@@ -11,7 +11,12 @@ export const SignUp: React.FC = () => {
       <div css={styles.title__wrapper}>
         <h1 css={styles.title}>Create account</h1>
       </div>
-      <Form />
+      <Form
+        btnText="Create account"
+        action={(email: string, password: string) => {
+          console.log(email, password)
+        }}
+      />
     </div>
   )
 }
