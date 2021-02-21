@@ -5,7 +5,7 @@ import styles from "./style"
 
 import { Form } from "../../components/Form/Form"
 
-export const Login: React.FC = () => {
+export const SignUp: React.FC = () => {
   return (
     <div css={styles.container}>
       <div css={styles.title__wrapper}>
