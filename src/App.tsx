@@ -5,7 +5,7 @@ import styles from "./style"
 import { Global } from "@emotion/react"
 import { globalStyles } from "./common/styles"
 import { Header } from "./components/Header/Header"
-import { Confirm } from "./screens/Confirm/Confirm"
+import { Home } from "./screens/Home/Home"
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
       <Global styles={globalStyles} />
       <Header />
       <div css={styles.content__container}>
-        <Confirm />
+        <Home />
       </div>
     </div>
   )

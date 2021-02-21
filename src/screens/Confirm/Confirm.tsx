@@ -23,7 +23,7 @@ export const Confirm = () => {
           <Button text="Resend" />
         </div>
 
-        <span css={styles.signOut}>Sign Out</span>
+        <span css={styles.signOut}>Sign out</span>
       </div>
       <div>
         <img css={styles.svg} src={envelope} alt="envelope" />
