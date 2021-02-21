@@ -11,6 +11,11 @@ const styles = {
     cursor: pointer;
 
     background-color: ${ds.colors.blue};
+
+    &:disabled {
+      cursor: default;
+      opacity: 75%;
+    }
   `,
 }
 

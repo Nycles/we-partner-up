@@ -3,6 +3,11 @@
 import React from "react"
 import styles from "./style"
 
-export const Button: React.FC = () => {
-  return <button css={styles.btn}>Click</button>
+interface IProps {
+  text: string
+  action?: () => {}
+}
+
+export const Button = (props: IProps) => {
+  return <button css={styles.btn}>{props.text}</button>
 }

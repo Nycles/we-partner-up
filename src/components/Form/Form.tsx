@@ -25,7 +25,7 @@ export const Form = () => {
       </div>
 
       <div css={styles.btn__wrapper}>
-        <Button />
+        <Button text="Create account" />
       </div>
     </form>
   )
