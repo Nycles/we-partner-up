@@ -36,11 +36,6 @@ const styles = {
     width: 162px;
     height: 42px;
 
-    font-family: Montserrat;
-    color: ${ds.colors.white};
-    font-size: 18px;
-    font-weight: 700;
-
     cursor: pointer;
     border: 0;
     border-radius: 5px;

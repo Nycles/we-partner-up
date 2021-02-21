@@ -20,4 +20,19 @@ export const globalStyles = {
     fontSize: 14,
     color: defaultStyles.colors.darkBlue,
   },
+  button: {
+    fontFamily: "Montserrat",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontSize: 18,
+    color: defaultStyles.colors.white,
+  },
+  input: {
+    fontFamily: "Montserrat",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontSize: 14,
+    color: defaultStyles.colors.darkBlue,
+    opacity: 0.4,
+  },
 }
