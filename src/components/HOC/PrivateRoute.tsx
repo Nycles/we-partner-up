@@ -9,8 +9,11 @@ export const PrivateRoute = ({ component: Component, ...rest }: any) => {
     <Route
       {...rest}
       render={(props) => {
-        if (!isAuth) return <Redirect to="sign-up" />
-        else if (isAuth && !isEmailVerified) return <Redirect to="confirm" />
+        const url: string = props.location.pathname
+
+        if (!isAuth && url !== "/sign-up") return <Redirect to="sign-up" />
+        else if (isAuth && !isEmailVerified && url !== "/confirm") return <Redirect to="confirm" />
+        else if (isAuth && isEmailVerified && url === "/confirm") return <Redirect to="/" />
         else return <Component {...props} />
       }}
     ></Route>

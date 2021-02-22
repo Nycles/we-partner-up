@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
+import { signOut } from "../../firebase/auth"
 import { auth } from "../../firebase/firebase"
 
 const AuthContext = React.createContext({})
@@ -10,6 +11,19 @@ export const AuthProvider = ({ children }: any) => {
   const [email, setEmail] = useState<string>("")
   const [isEmailVerified, setIsEmailVerified] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
+
+  const doSetIsEmailVerified = (payload: boolean) => {
+    setIsEmailVerified(payload)
+  }
+
+  const doSignOut = async () => {
+    try {
+      await signOut()
+      localStorage.removeItem("lastTimerDeathTime")
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser: any) => {
@@ -30,6 +44,8 @@ export const AuthProvider = ({ children }: any) => {
     isAuth,
     email,
     isEmailVerified,
+    doSignOut,
+    doSetIsEmailVerified,
   }
 
   return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>

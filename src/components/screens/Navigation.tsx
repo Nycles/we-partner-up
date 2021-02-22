@@ -11,8 +11,8 @@ export const Navigation = () => {
     <Router basename="/" forceRefresh={false}>
       <Switch>
         <PrivateRoute exact path="/" component={Home} />
-        <Route path="/sign-up" component={SignUp} />
-        <Route path="/confirm" component={Confirm} />
+        <PrivateRoute path="/sign-up" component={SignUp} />
+        <PrivateRoute path="/confirm" component={Confirm} />
       </Switch>
     </Router>
   )
