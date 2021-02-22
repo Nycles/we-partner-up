@@ -42,7 +42,7 @@ export const Form = (props: IProps) => {
       </div>
 
       <div css={styles.btn__wrapper}>
-        <Button text={props.btnText} disabled={!email || !password} />
+        <Button text={props.btnText} disabled={!email || password.length < 8} />
       </div>
     </form>
   )

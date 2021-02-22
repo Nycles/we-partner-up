@@ -5,13 +5,21 @@ import { Confirm } from "./Confirm/Confirm"
 import { Home } from "./Home/Home"
 import { SignUp } from "./SignUp/SignUp"
 
-export const Navigation: React.FC = () => {
+export const Navigation = () => {
   return (
     <Router basename="/" forceRefresh={false}>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/sign-up" component={SignUp} />
-        <Route path="/confirm" component={Confirm} />
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route path="/sign-up">
+          <SignUp />
+        </Route>
+
+        <Route path="/confirm">
+          <Confirm />
+        </Route>
       </Switch>
     </Router>
   )

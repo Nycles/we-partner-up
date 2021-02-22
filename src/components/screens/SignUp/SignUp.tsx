@@ -3,7 +3,7 @@
 import React from "react"
 import styles from "./style"
 
-import { Form } from "../../components/Form/Form"
+import { Form } from "../../common/Form/Form"
 
 export const SignUp: React.FC = () => {
   return (

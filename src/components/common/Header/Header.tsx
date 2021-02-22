@@ -2,7 +2,7 @@
 
 import React from "react"
 import styles from "./style"
-import logo from "../../assets/img/logo.png"
+import logo from "../../../assets/img/logo.png"
 
 export const Header: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react"
-import { defaultStyles as ds } from "./common/styles"
+import { defaultStyles as ds } from "../../common/styles"
 
 const styles = {
   content__container: css`

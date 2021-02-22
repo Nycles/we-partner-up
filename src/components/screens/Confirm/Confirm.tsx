@@ -2,9 +2,9 @@
 
 import React from "react"
 import styles from "./style"
-import envelope from "../../assets/svg/envelope.svg"
+import envelope from "../../../assets/svg/envelope.svg"
 
-import { Button } from "../../components/Button/Button"
+import { Button } from "../../common/Button/Button"
 
 export const Confirm = () => {
   return (
@@ -16,7 +16,7 @@ export const Confirm = () => {
           <span css={styles.subtitle}>
             Please confirm your email by clicking on the link in the confirmation email that we sent to
           </span>
-          <span css={styles.subtitle__email}> ozzy@softcery.com</span>
+          <span css={styles.subtitle__email}> email</span>
         </div>
 
         <div css={styles.btn__wrapper}>
