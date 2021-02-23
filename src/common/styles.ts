@@ -33,6 +33,6 @@ export const globalStyles = {
     fontStyle: "normal",
     fontSize: 14,
     color: defaultStyles.colors.darkBlue,
-    opacity: 0.4,
+    opacity: 0.75,
   },
 }

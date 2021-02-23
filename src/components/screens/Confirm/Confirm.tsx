@@ -62,8 +62,12 @@ export const Confirm: React.FC = () => {
     } else setLoading(false)
   }
 
-  const timerMotor = (): void => {
-    if (timerSeconds) setTimeout(() => setTimerSeconds(timerSeconds - 1), 1000)
+  const timerMotor = () => {
+    if (timerSeconds) {
+      const id = setTimeout(async () => setTimerSeconds(timerSeconds - 1), 1000)
+
+      return () => clearTimeout(id)
+    }
   }
 
   useEffect(initializingTimer, [])

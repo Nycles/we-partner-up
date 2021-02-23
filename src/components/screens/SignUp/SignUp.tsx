@@ -11,7 +11,7 @@ export const SignUp: React.FC = () => {
     try {
       await signUp(email, password)
     } catch (error) {
-      console.log(error)
+      return error
     }
   }
 
