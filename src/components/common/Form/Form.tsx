@@ -6,14 +6,14 @@ import { Button } from "../Button/Button"
 
 interface IProps {
   btnText: string
-  action(email: string, password: string): any
+  action(email: string, password: string): void
 }
 
 export const Form = (props: IProps) => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState<string>("")
+  const [password, setPassword] = useState<string>("")
 
-  const submit = (e: React.FormEvent) => {
+  const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     props.action(email, password)

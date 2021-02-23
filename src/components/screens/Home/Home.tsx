@@ -6,7 +6,7 @@ import styles from "./style"
 import { Button } from "../../common/Button/Button"
 import { useAuth } from "../../contexts/AuthContext"
 
-export const Home = () => {
+export const Home: React.FC = () => {
   const { doSignOut }: any = useAuth()
 
   return (

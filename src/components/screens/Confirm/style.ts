@@ -1,5 +1,4 @@
 import { css } from "@emotion/react"
-import { defaultStyles as ds } from "../../../common/styles"
 
 const styles = {
   container: css`

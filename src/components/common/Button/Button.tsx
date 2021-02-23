@@ -12,7 +12,7 @@ interface IProps {
 
 export const Button = (props: IProps) => {
   return (
-    <button css={styles.btn} disabled={props.disabled || props.loading} onClick={props.action}>
+    <button css={styles.btn} disabled={props.disabled || props.loading || false} onClick={props.action}>
       {props.loading ? "..." : props.text}
     </button>
   )

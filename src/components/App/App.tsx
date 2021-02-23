@@ -9,7 +9,7 @@ import { Header } from "../common/Header/Header"
 import { AuthProvider } from "../contexts/AuthContext"
 import { Navigation } from "../screens/Navigation"
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <div>
       <Global styles={globalStyles} />
